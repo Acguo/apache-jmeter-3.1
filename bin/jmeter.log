@@ -1,403 +1,58 @@
-2017/06/26 12:15:55 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Loading user properties from: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin\user.properties 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Loading system properties from: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin\system.properties 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Version 3.1 r1770033 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: java.version=1.8.0_131 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: os.name=Windows 10 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: os.arch=amd64 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: os.version=10.0 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: file.encoding=GBK 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Max memory     =1056964608 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Available Processors =4 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: JMeterHome=E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: user.dir  =E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: PWD       =E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin 
-2017/06/26 12:15:56 INFO  - jmeter.JMeter: IP: 192.168.0.117 Name: XTM-01706061955 FullName: XTM-01706061955 
-2017/06/26 12:15:57 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform] 
-2017/06/26 12:15:57 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
-2017/06/26 12:16:00 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
-2017/06/26 12:16:00 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
-2017/06/26 12:16:05 WARN  - org.jmeterplugins.repository.PluginManagerMenuItem: Failed to load plugin updates info java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at sun.security.ssl.InputRecord.readFully(Unknown Source)
-	at sun.security.ssl.InputRecord.read(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
-	at sun.security.ssl.AppInputStream.read(Unknown Source)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:158)
-	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
-	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:271)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:209)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:686)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:488)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.jmeterplugins.repository.JARSourceHTTP.getJSON(JARSourceHTTP.java:104)
-	at org.jmeterplugins.repository.JARSourceHTTP.getRepo(JARSourceHTTP.java:135)
-	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:49)
-	at org.jmeterplugins.repository.PluginManagerMenuItem.<init>(PluginManagerMenuItem.java:28)
-	at org.jmeterplugins.repository.PluginManagerMenuCreator.getMenuItemsAtLocation(PluginManagerMenuCreator.java:22)
-	at org.apache.jmeter.gui.util.JMeterMenuBar.addPluginsMenuItems(JMeterMenuBar.java:572)
-	at org.apache.jmeter.gui.util.JMeterMenuBar.makeOptionsMenu(JMeterMenuBar.java:349)
-	at org.apache.jmeter.gui.util.JMeterMenuBar.createMenuBar(JMeterMenuBar.java:268)
-	at org.apache.jmeter.gui.util.JMeterMenuBar.<init>(JMeterMenuBar.java:161)
-	at org.apache.jmeter.gui.MainFrame.init(MainFrame.java:493)
-	at org.apache.jmeter.gui.MainFrame.<init>(MainFrame.java:241)
-	at org.apache.jmeter.JMeter.startGui(JMeter.java:330)
-	at org.apache.jmeter.JMeter.start(JMeter.java:483)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.apache.jmeter.NewDriver.main(NewDriver.java:259)
-
-2017/06/26 12:16:06 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion 
-2017/06/26 12:16:08 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor 
-2017/06/26 12:16:08 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
-2017/06/26 12:16:08 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
-2017/06/26 12:16:11 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
-2017/06/26 12:16:11 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin\proxyserver.jks 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener 
-2017/06/26 12:16:11 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.MonitorHealthVisualizer 
-2017/06/26 12:16:12 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
-2017/06/26 12:16:12 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
-2017/06/26 12:16:12 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
-2017/06/26 12:16:12 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
-2017/06/26 12:16:17 INFO  - jmeter.services.FileServer: Default base='E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin' 
-2017/06/26 12:16:17 INFO  - jmeter.gui.action.Load: Loading file: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\debug.jmx 
-2017/06/26 12:16:17 INFO  - jmeter.services.FileServer: Set new base='E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1' 
-2017/06/26 12:16:17 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
-2017/06/26 12:16:17 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
-2017/06/26 12:16:17 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
-2017/06/26 12:16:17 INFO  - jmeter.save.SaveService: All converter versions present and correct 
-2017/06/26 12:16:17 INFO  - jmeter.save.SaveService: Loading file: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\debug.jmx 
-2017/06/26 12:16:17 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
-2017/06/26 12:16:18 INFO  - jmeter.services.FileServer: Set new base='E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1' 
-2017/06/26 14:42:26 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:42:26 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:42:26 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:42:26 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:42:26 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:42:26 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:42:26 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:42:26 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:42:26 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:42:26 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:42:26 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:42:26 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:42:26 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = XTM-01706061955 
-2017/06/26 14:42:26 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
-2017/06/26 14:42:27 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:42:27 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:42:27 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:42:27 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:42:59 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:42:59 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:42:59 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:42:59 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:42:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:42:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:42:59 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:42:59 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:42:59 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:42:59 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:42:59 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:01 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:01 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:01 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:43:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:43:11 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:43:11 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:43:11 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:43:11 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:43:12 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:43:12 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:43:12 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:43:12 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:43:12 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:43:12 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:43:12 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:12 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:12 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:43:12 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:43:12 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:44:03 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:44:03 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:44:03 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:44:03 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:44:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:44:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:44:03 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:44:03 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:44:03 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:44:03 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:44:03 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:44:05 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:44:05 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:44:05 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:44:05 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:46:14 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:46:14 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:46:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:46:14 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:46:14 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:46:14 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:14 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:14 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:14 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:46:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:46:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:46:21 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:46:21 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:46:21 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:46:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:46:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:46:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:46:21 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:46:21 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:46:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:46:21 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:22 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:22 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:46:22 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:46:22 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:51:40 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:51:40 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:51:40 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:51:40 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:51:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:51:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:51:40 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:51:40 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:51:40 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:51:40 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:51:40 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:51:41 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:51:41 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:51:41 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:51:41 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:51:58 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:51:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:51:58 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:51:58 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:51:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:51:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:51:59 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:51:59 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:51:59 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:51:59 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:51:59 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:52:00 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:52:00 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:52:00 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:52:00 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:53:13 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:53:13 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:53:13 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:53:13 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:53:13 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:53:13 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:53:13 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:53:13 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:53:13 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:53:13 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:53:13 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:14 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:14 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:14 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:53:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:53:21 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:53:21 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:53:21 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:53:21 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:53:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:53:21 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:53:21 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:53:21 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:53:21 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:53:21 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:53:21 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:23 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:23 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:53:23 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:53:23 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:55:35 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:55:35 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:55:35 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:55:35 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:55:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:55:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:55:35 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:55:35 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:55:35 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:55:35 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:55:35 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:36 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:36 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:36 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:55:36 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 14:55:45 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 14:55:45 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 14:55:45 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 14:55:45 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 14:55:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 14:55:45 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 14:55:45 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 14:55:45 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 14:55:45 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 14:55:45 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 14:55:45 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:46 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:46 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 14:55:46 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 14:55:46 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:02:06 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:02:06 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:02:06 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:02:06 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:02:06 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 15:02:06 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 15:02:06 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:02:06 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:02:06 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:02:06 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:02:06 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 15:02:08 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 15:02:08 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 15:02:08 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:02:08 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:13:27 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:13:27 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:13:27 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:13:27 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:13:28 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 15:13:28 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 15:13:28 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:13:28 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:13:28 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:13:28 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:13:28 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 15:13:29 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 15:13:29 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 15:13:29 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:13:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:15:22 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:15:22 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:15:22 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:15:22 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:15:23 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-统计查询 
-2017/06/26 15:15:23 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-统计查询. 
-2017/06/26 15:15:23 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:15:23 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:15:23 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:15:23 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:15:23 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-统计查询 1-1 
-2017/06/26 15:15:24 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-统计查询 1-1 
-2017/06/26 15:15:24 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-统计查询 1-1 
-2017/06/26 15:15:24 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:15:24 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:31:23 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:31:23 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:31:23 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:31:23 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:31:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-运营分析 
-2017/06/26 15:31:24 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-运营分析. 
-2017/06/26 15:31:24 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:31:24 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:31:24 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:31:24 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:31:24 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:25 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:25 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:31:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:31:49 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:31:49 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:31:49 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:31:49 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:31:49 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-运营分析 
-2017/06/26 15:31:49 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-运营分析. 
-2017/06/26 15:31:49 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:31:49 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:31:49 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:31:49 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:31:49 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:50 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:50 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-运营分析 1-1 
-2017/06/26 15:31:50 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:31:50 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:32:10 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:32:10 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:32:10 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:32:10 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:32:10 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-运营分析 
-2017/06/26 15:32:10 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-运营分析. 
-2017/06/26 15:32:10 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:32:10 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:32:10 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:32:10 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:32:10 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:11 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:11 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:11 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:32:11 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 15:32:58 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 15:32:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 15:32:58 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 15:32:58 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 15:32:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-运营分析 
-2017/06/26 15:32:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-运营分析. 
-2017/06/26 15:32:58 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 15:32:58 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 15:32:58 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 15:32:58 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 15:32:58 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:59 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:59 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-运营分析 1-1 
-2017/06/26 15:32:59 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 15:32:59 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
-2017/06/26 16:01:04 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
-2017/06/26 16:01:04 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
-2017/06/26 16:01:04 INFO  - jmeter.testelement.TestPlan: add E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\mysql-connector-java-5.1.38.jar to classpath 
-2017/06/26 16:01:04 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
-2017/06/26 16:01:04 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : henry-业主后台-运营分析 
-2017/06/26 16:01:04 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group henry-业主后台-运营分析. 
-2017/06/26 16:01:04 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
-2017/06/26 16:01:04 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
-2017/06/26 16:01:04 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
-2017/06/26 16:01:04 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
-2017/06/26 16:01:04 INFO  - jmeter.threads.JMeterThread: Thread started: henry-业主后台-运营分析 1-1 
-2017/06/26 16:01:06 INFO  - jmeter.threads.JMeterThread: Thread is done: henry-业主后台-运营分析 1-1 
-2017/06/26 16:01:06 INFO  - jmeter.threads.JMeterThread: Thread finished: henry-业主后台-运营分析 1-1 
-2017/06/26 16:01:06 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
-2017/06/26 16:01:06 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2017/06/26 21:38:12 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Loading user properties from: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin\user.properties 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Loading system properties from: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin\system.properties 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Setting JMeter property: jmeter.save.saveservice.output_format=xml 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: java.version=1.8.0_131 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: os.name=Windows 10 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: os.arch=amd64 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: os.version=10.0 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: file.encoding=GBK 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Max memory     =3786407936 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Available Processors =4 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: JMeterHome=E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: user.dir  =E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: PWD       =E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin 
+2017/06/26 21:38:12 INFO  - jmeter.JMeter: IP: 192.168.0.117 Name: XTM-01706061955 FullName: XTM-01706061955 
+2017/06/26 21:38:12 INFO  - jmeter.services.FileServer: Default base='E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\bin' 
+2017/06/26 21:38:12 INFO  - jmeter.services.FileServer: Set new base='E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\BCscript' 
+2017/06/26 21:38:12 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2017/06/26 21:38:12 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2017/06/26 21:38:12 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2017/06/26 21:38:12 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2017/06/26 21:38:12 INFO  - jmeter.save.SaveService: Loading file: E:\BaiduNetdiskDownload\apache-jmeter-3.1\apache-jmeter-3.1\BCscript\818.jmx 
+2017/06/26 21:38:12 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2017/06/26 21:38:13 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/06/26 21:38:13 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2017/06/26 21:38:13 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2017/06/26 21:38:13 INFO  - jmeter.JMeter: 正在运行的测试 (1498484293141) 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : 线程组 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group 线程组. 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/06/26 21:38:13 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2017/06/26 21:38:13 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/06/26 21:38:13 INFO  - jmeter.threads.JMeterThread: Thread started: 线程组 1-1 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = XTM-01706061955 
+2017/06/26 21:38:13 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2017/06/26 21:38:13 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2017/06/26 21:38:13 INFO  - jmeter.threads.JMeterThread: Thread is done: 线程组 1-1 
+2017/06/26 21:38:13 INFO  - jmeter.threads.JMeterThread: Thread finished: 线程组 1-1 
+2017/06/26 21:38:13 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/06/26 21:38:13 INFO  - jmeter.reporters.Summariser: summary =      2 in 00:00:01 =    3.3/s Avg:   256 Min:   214 Max:   299 Err:     1 (50.00%) 
